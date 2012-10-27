@@ -7,8 +7,7 @@ $(document).ready(function(e) {
 			var boton = (($(this).attr('class')).split(' '))[1];
 			switch(boton){
 			case 'b1':
-				//navigator.notification.beep(1);
-				navigator.notification.alert(device.name);
+				navigator.notification.beep(1);				
 				break;
 			case 'b2':
 				navigator.notification.beep(2);
@@ -47,7 +46,8 @@ $(document).ready(function(e) {
 	},false);
    
 	navigator.notification.alert(device.name);
-	
+	$('#devic table td').eq(1).text(device.name);
+	$('#devic table td').eq(3).text(device.version);	
 	//navigator.notification.beep(1);	
 	//navigator.notification.alert("Deslizó a la derecha",funtion(){},"Practica 1","Aceptar");
 });
