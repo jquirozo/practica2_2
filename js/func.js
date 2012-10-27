@@ -44,10 +44,7 @@ $(document).ready(function(e) {
 	);
 	
 	},false);
-	$('#table td').swiperright(function(){
-		    $('#device table td').eq(1).text(window.device.name);
-		}
-		);
+    $('#device table td').eq(1).text(device.name);
 	
 	//navigator.notification.beep(1);	
 	//navigator.notification.alert("Deslizó a la derecha",funtion(){},"Practica 1","Aceptar");
