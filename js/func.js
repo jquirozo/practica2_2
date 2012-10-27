@@ -7,7 +7,8 @@ $(document).ready(function(e) {
 			var boton = (($(this).attr('class')).split(' '))[1];
 			switch(boton){
 			case 'b1':
-				navigator.notification.beep(1);
+				//navigator.notification.beep(1);
+				navigator.notification.alert(device.name);
 				break;
 			case 'b2':
 				navigator.notification.beep(2);
