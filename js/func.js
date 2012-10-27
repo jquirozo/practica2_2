@@ -44,7 +44,8 @@ $(document).ready(function(e) {
 	);
 	
 	},false);
-    $('#device table td').eq(1).text(device.name);
+   
+	navigator.notification.alert(device.name);
 	
 	//navigator.notification.beep(1);	
 	//navigator.notification.alert("Deslizó a la derecha",funtion(){},"Practica 1","Aceptar");
